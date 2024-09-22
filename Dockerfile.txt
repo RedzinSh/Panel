@@ -1,7 +1,0 @@
-RUN apt update
-RUN apt upgrade
-RUN wget https://github.com/RedzinSh/Panel/blob/c8ebb40a91914b7fbe17e1c14a911d1fef6427e0/docker-compose.yml
-COPY . .
-RUN chmod +x ./docker-compose up -d
-RUN chmod +x ./docker-compose run --rm panel php artisan p:user:make
-EXPOSE 80
